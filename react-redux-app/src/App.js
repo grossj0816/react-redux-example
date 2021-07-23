@@ -1,25 +1,32 @@
+import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './components/store/store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Posts from './components/Posts';
+import Postform from './components/Postform';
+
+
+class App extends Component {
+  render() {
+    return (
+      // Provider is a react component that pretty much connects
+      //our react app and redux together.
+
+      //store holds the whole state tree of this app. This is the
+      //full data repo for the app.
+      <Provider store={store}>
+        <div>
+          <div className="App">
+            <Postform />
+            <hr />
+            <Posts />       
+          </div> 
+        </div>
+      </Provider>
+    )
+  }
 }
 
 export default App;

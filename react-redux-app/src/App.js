@@ -6,6 +6,8 @@ import store from './components/store/store';
 
 import Posts from './components/Posts';
 import Postform from './components/Postform';
+import Users from './components/Users';
+import Userform from './components/Userform';
 
 
 class App extends Component {
@@ -21,7 +23,11 @@ class App extends Component {
           <div className="App">
             <Postform />
             <hr />
-            <Posts />       
+            <Posts />
+            <br />
+            <Userform />
+            <hr />
+            <Users />       
           </div> 
         </div>
       </Provider>

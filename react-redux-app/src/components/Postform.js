@@ -28,7 +28,6 @@ class Postform extends Component {
 
         //CALL ACTION
         this.props.createPost(post)
-
     }
 
     render() {

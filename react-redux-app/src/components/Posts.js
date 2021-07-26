@@ -10,14 +10,6 @@ class Posts extends Component {
         this.props.fetchPosts();
     }
 
-    // static getDerivedStateFromProps(nextProps, prevState)
-    // {
-    //     if(nextProps.newPost != "")
-    //     {
-    //         return 
-    //     }
-    // }
-
 
     componentWillReceiveProps(nextProps)
     {
@@ -26,6 +18,7 @@ class Posts extends Component {
             this.props.posts.unshift(nextProps.newPost);
         }
     }
+
 
     render() {
         const postItems = this.props.posts.map(post => {

@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import courseworkReducer from "./courseworkReducer";
 import postReducer from './postReducer';
 import userReducer from "./userReducer";
 
@@ -8,5 +9,6 @@ import userReducer from "./userReducer";
 export default combineReducers({
     posts: postReducer,
     //added the userReducer
-    users: userReducer
+    users: userReducer,
+    coursework: courseworkReducer
 });

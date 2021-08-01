@@ -7,7 +7,7 @@ import { getCoursework } from './actions/courseworkAction';
 
 
 const Header = (props) => {
-    const studentProfile = useSelector(state => state.coursework.items);
+    const coursework = useSelector(state => state.coursework.items);
     const dispatch = useDispatch();
     const {contactID} = props;
 
@@ -24,7 +24,7 @@ const Header = (props) => {
     }, [])
     //props.getCoursework(contactID);
     let profile = new Object();
-     profile = studentProfile['studentProfile'];
+     profile = coursework['studentProfile'];
     console.log(JSON.stringify(profile));
     // console.log("Student Profile" + JSON.stringify(profile));
     // let coursework = props.coursework["studentProfile"];

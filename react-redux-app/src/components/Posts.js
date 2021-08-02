@@ -22,6 +22,7 @@ class Posts extends Component {
 
 
     render() {
+        const contactID = 2;
         const postItems = this.props.posts.map(post => {
             
             return (
@@ -37,7 +38,7 @@ class Posts extends Component {
             <div>
                <h1>Post</h1> 
                <p>{postItems}</p>
-               <Header contactID={30463353} />
+               <Header contactID={contactID} />
             </div>
         )
     }

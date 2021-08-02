@@ -41,6 +41,8 @@ const Header = (props) => {
                 <ul>Best Degree: {profile.bestDegree}</ul>
                 <ul>Date of Birth: {profile.dob}</ul>
                 <ul>Former Names: {profile.formerNames}</ul>
+                <ul>Concentration Code: {profile.concentrationCode}</ul>
+
             </li>
         );
     }
@@ -53,6 +55,7 @@ const Header = (props) => {
         <ul>Best Degree: {}</ul>
         <ul>Date of Birth: {}</ul>
         <ul>Former Names: {}</ul>
+        <ul>Concentration Code: {}</ul>
     </li>
     )
 
